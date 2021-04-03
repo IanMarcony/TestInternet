@@ -32,22 +32,25 @@ body {
   margin-top: 20px;
 }
 
-button[type="button"] {
+a {
   cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
   margin-top: 20px;
   width: 40%;
   background-color: #ff9000;
   height: 56px;
   border-radius: 10px;
   border: 0;
-  padding: 0 16px;
+  padding: 16px;
   color: #312e38;
   transition: background-color 0.2s;
 
   font-size: 18px;
   font-weight: 700;
 }
-button[type="button"]:hover {
+a:hover {
   background-color: rgba(255, 144, 0, 0.8);
 }
 
