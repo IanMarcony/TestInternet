@@ -28,7 +28,7 @@
   - Execute Api
      ```bash
       # In api folder execute follow command
-      npm start
+      npm run dev
     ```
 
 
