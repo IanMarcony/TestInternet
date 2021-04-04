@@ -83,3 +83,9 @@ button:hover {
   font-size: 18px;
   font-weight: 400;
 }
+
+@media screen and (max-width: 500px) {
+  .registers li p {
+    font-size: 17px;
+  }
+}

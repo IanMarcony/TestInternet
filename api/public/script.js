@@ -12,14 +12,12 @@ $(document).ready(function () {
   }
 
   socket.on("updated", (data) => {
-    console.log(data);
     $(".media").html("");
     $(".media").append(`Média: ${data.media.toFixed(2)} mbps`);
     renderRegisters(data.registers);
   });
 
   socket.on("previous", (data) => {
-    console.log(data);
     $(".media").html("");
     $(".media").append(`Média: ${data.media.toFixed(2)} mbps`);
     renderRegisters(data.registers);

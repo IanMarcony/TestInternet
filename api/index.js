@@ -28,7 +28,6 @@ io.on("connection", (socket) => {
   const media = sum / registers.length;
   socket.emit("previous", { registers, media });
   socket.on("message", (data) => {
-    console.log(data);
     const { registers } = require("../data.json");
     const sum = registers.reduce(
       (total, register) => total + register.velocidade,
