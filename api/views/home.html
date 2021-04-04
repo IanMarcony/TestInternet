@@ -1,15 +1,8 @@
 {% extends "index.html" %} {% block content %}
 
 <h1 class="title">Registros do teste de velocidade de internet</h1>
-<h2 class="media">Média: {{media.toFixed(2)}} MB</h2>
-<a href="/">Recarregar registros</a>
-<ul class="registers">
-  {% for register in registers | reverse %}
-  <li>
-    <h1>{{register.data_hora}}</h1>
-    <p>Velocidade: {{register.velocidade.toFixed(2)}} MB</p>
-  </li>
-  {% endfor %}
-</ul>
+<h2 class="media">Média:</h2>
+<button type="button">Recarregar registros</button>
+<ul class="registers"></ul>
 
 {% endblock %}
